@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hey there, I'm *Senkuu*!
+Hey there, I'm *Senku*!
 I'm here to help you manage your groups! Hit Help button below to find out more about how to use me to my full potential[.](https://images6.alphacoders.com/102/thumb-1920-1027254.jpg)
 """
 
