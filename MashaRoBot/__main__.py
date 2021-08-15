@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`[Dattebayo](https://i.imgur.com/nMnTUVV.mp4) My name is` *Hɪɴᴀᴛᴀ Hʏᴜɢᴀ 🌟*
+[Dattebayo](https://i.imgur.com/nMnTUVV.mp4) My name is *Hɪɴᴀᴛᴀ Hʏᴜɢᴀ 🌟*
 `I'm here to help you manage your groups! Hit Help button below to find out more about how to use me to my full potential.` 
 𝙒𝙝𝙚𝙣 𝙄 𝙒𝙖𝙩𝙘𝙝 𝙔𝙤𝙪, 𝙄 𝙁𝙚𝙚𝙡 𝙎𝙩𝙧𝙤𝙣𝙜, 𝙇𝙞𝙠𝙚 𝙄 𝘾𝙖𝙣 𝘿𝙤 𝘼𝙣𝙮𝙩𝙝𝙞𝙣𝙜...
 """
