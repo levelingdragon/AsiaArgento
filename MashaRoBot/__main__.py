@@ -92,7 +92,7 @@ buttons = [
         InlineKeyboardButton(
             text="Sᴏᴜʀᴄᴇ 💫", callback_data="source_"),
         InlineKeyboardButton(
-            text="Sᴜᴘᴘᴏʀᴛ 📢", url="https://t.me/weebgc"
+            text="Sᴜᴘᴘᴏʀᴛ 📢", url="https://t.me/weebsgc"
         ),
     ],
 ]
@@ -208,6 +208,7 @@ def start(update: Update, context: CallbackContext):
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
+                disable_web_page_preview=False,
                 timeout=60,
             )
     else:
@@ -347,7 +348,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text="""  I'm *Hinata Hyuga*, a powerful group management bot from Naruto to help you manage your group easily.
+            text="""I'm *Hinata Hyuga*, a powerful group management bot from Naruto to help you manage your group easily.
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
                  ❍ I have an advanced anti-flood system.
