@@ -74,34 +74,35 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow My name is` *Eʟɪsᴀ 🌟*
+`[Dattebayo](https://i.imgur.com/nMnTUVV.mp4) My name is` *Hɪɴᴀᴛᴀ Hʏᴜɢᴀ 🌟*
 `I'm here to help you manage your groups! Hit Help button below to find out more about how to use me to my full potential.` 
+𝙒𝙝𝙚𝙣 𝙄 𝙒𝙖𝙩𝙘𝙝 𝙔𝙤𝙪, 𝙄 𝙁𝙚𝙚𝙡 𝙎𝙩𝙧𝙤𝙣𝙜, 𝙇𝙞𝙠𝙚 𝙄 𝘾𝙖𝙣 𝘿𝙤 𝘼𝙣𝙮𝙩𝙝𝙞𝙣𝙜...
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="Aᴅᴅ Mᴇ 🎉", url="t.me/AndreaBetaRoBot?startgroup=true"),
+            text="Aᴅᴅ Mᴇ 🎉", url="t.me/HiataSuperBot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="Aʙᴏᴜᴛ 🔖", callback_data="masha_"),
-        InlineKeyboardButton(text="Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅs ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="Sʜɪɴᴏʙɪ Gᴜɪᴅᴇ ❔", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
             text="Sᴏᴜʀᴄᴇ 💫", callback_data="source_"),
         InlineKeyboardButton(
-            text="Sᴜᴘᴘᴏʀᴛ 📢", url="https://t.me/AndreaSupportChat"
+            text="Sᴜᴘᴘᴏʀᴛ 📢", url="https://t.me/weebgc"
         ),
     ],
 ]
 
 
-HELP_STRINGS = """
+HELP_STRINGS = """ [𝕋𝕙𝕖𝕣𝕖𝕗𝕠𝕣𝕖, 𝕊𝕥𝕒𝕟𝕕 𝕌𝕡 𝕋𝕠𝕘𝕖𝕥𝕙𝕖𝕣 𝕎𝕚𝕥𝕙 𝕄𝕖, ℕ𝕒𝕣𝕦𝕥𝕠... 𝔹𝕖𝕔𝕒𝕦𝕤𝕖 ℕ𝕖𝕧𝕖𝕣 𝔾𝕠𝕚𝕟𝕘 𝔹𝕒𝕔𝕜 𝕆𝕟 𝕆𝕟𝕖'𝕤 𝕎𝕠𝕣𝕕... 𝕀𝕤 𝕄𝕪 ℕ𝕚𝕟𝕛𝕒 𝕎𝕒𝕪, 𝕋𝕠𝕠!](https://i.imgur.com/aFxaOmh.jpeg)
 *『HELP BUTTONS HERE』*"""
 
 
-DONATE_STRING = """No need.. I'm rich"""
+DONATE_STRING = """Get Your Self A life... Well it does'nt matter"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -157,7 +158,7 @@ def send_help(chat_id, text, keyboard=None):
         chat_id=chat_id,
         text=text,
         parse_mode=ParseMode.MARKDOWN,
-        disable_web_page_preview=True,
+        disable_web_page_preview=False,
         reply_markup=keyboard,
     )
 
@@ -346,16 +347,16 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text="""  I'm *Andrea Beta*, a powerful group management bot built to help you manage your group easily.
+            text="""  I'm *Hinata Hyuga*, a powerful group management bot from Naruto to help you manage your group easily.
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
                  ❍ I have an advanced anti-flood system.
                  ❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  ❍ I check for admins' permissions before executing any command and more stuffs
-                 \n_Masha's licensed under the GNU General Public License v3.0_
-                 Here is the [Contact My Owner](https://t.me/TERA_BAAP_VILLAIN_XD).
-                 If you have any question about Masha, let us know at @AndreaSupportChat.""",
+                 \n
+                 Here is the [My Naruto](https://t.me/Amaterasu91).
+                 If you have any question about Hinata, let us know at @WeebsGC.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -381,8 +382,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi.. I'm *Andrea Beta*
-                 \nHere is the [Source Code](https://t.me/TERA_BAAP_VILLAIN_XD) .""",
+            text=""" Hi.. I'm **
+                 \nHere is the [Source Code](https://t.me/GodlyDemon) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
